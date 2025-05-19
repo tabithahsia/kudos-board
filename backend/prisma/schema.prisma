@@ -1,0 +1,35 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // set this in your .env file
+}
+
+model Board {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  category    String
+  image       String
+  author      String?
+  cards       Card[]   // 1-to-many relation
+
+  createdAt   DateTime @default(now())
+}
+
+model Card {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  gif         String
+  author      String?
+  upvotes     Int      @default(0)
+  boardId     String
+  board       Board    @relation(fields: [boardId], references: [id])
+
+  createdAt   DateTime @default(now())
+}
