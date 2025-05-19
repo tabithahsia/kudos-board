@@ -36,7 +36,7 @@ function App() {
           />
         ) : (
           <>
-            <SearchBar query={searchQuery} onChange={setSearchQuery} />
+            <SearchBar onSearch={(q) => setSearchQuery(q)} />
             <Dashboard
               boards={filtered}
               setBoards={setBoards}
