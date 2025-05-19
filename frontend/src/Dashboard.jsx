@@ -3,8 +3,7 @@ import { useState } from "react";
 import CreateBoardModal from "./CreateBoardModal";
 import "./App.css";
 
-function Dashboard({ boards, onBoardClick, setBoards }) {
-  const [filter, setFilter] = useState(CATEGORIES.ALL);
+function Dashboard({ boards, filter, setFilter, onBoardClick, setBoards }) {
   const [showModal, setShowModal] = useState(false);
 
   const handleDeleteBoard = async (boardId) => {

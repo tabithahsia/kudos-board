@@ -1,10 +1,8 @@
 import { useState } from "react";
-export default function SearchBar({ query, onChange, onSearch }) {
-  const [input, setInput] = useState("");
-
+export default function SearchBar({ query, onSearch }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(input.trim());
+    onSearch(query.trim());
   };
 
   return (
@@ -13,7 +11,7 @@ export default function SearchBar({ query, onChange, onSearch }) {
         type="text"
         placeholder="Search boards..."
         value={query}
-        onChange={(e) => setInput(e.target.value)}
+        onChange={(e) => onSearch(e.target.value)}
       />
       <button type="submit" className="search-button">
         Search
@@ -21,7 +19,7 @@ export default function SearchBar({ query, onChange, onSearch }) {
       <button
         type="button"
         className="clear-button"
-        onClick={() => onChange("")}
+        onClick={() => onSearch("")}
         aria-label="Clear search"
       >
         Clear Search

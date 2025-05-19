@@ -5,11 +5,13 @@ import Header from "./Header";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import SearchBar from "./SearchBar";
+import { CATEGORIES } from "./constants/categories";
 
 function App() {
   const [boards, setBoards] = useState([]);
   const [selectedBoardId, setSelectedBoardId] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [filter, setFilter] = useState(CATEGORIES.ALL);
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}/api/boards`)
@@ -18,11 +20,15 @@ function App() {
       .catch(console.error);
   }, []);
 
-  const filtered = boards.filter(
-    (b) =>
-      b.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      b.description.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const visibleBoards = boards
+    .filter((b) => b.title.toLowerCase().includes(searchQuery.toLowerCase()))
+    .filter((b) =>
+      filter === CATEGORIES.ALL
+        ? true
+        : filter === CATEGORIES.RECENT
+        ? true
+        : b.category === filter
+    );
 
   return (
     <>
@@ -36,11 +42,20 @@ function App() {
           />
         ) : (
           <>
-            <SearchBar onSearch={(q) => setSearchQuery(q)} />
+            <SearchBar
+              query={searchQuery}
+              onSearch={(q) => setSearchQuery(q)}
+              onClear={() => {
+                setSearchQuery("");
+                setFilter(CATEGORIES.ALL);
+              }}
+            />
             <Dashboard
-              boards={filtered}
+              boards={visibleBoards}
               setBoards={setBoards}
               onBoardClick={setSelectedBoardId}
+              filter={filter}
+              setFilter={setFilter}
             />
           </>
         )}
