@@ -32,13 +32,13 @@ Deployed Application (**required**): [Kudos Board Deployed Site](https://kudos-b
   - [x] When a category is clicked, boards matching the specified category are displayed.
 - [ ] **Search Functionality**
   - [x] Users can use a search bar to search for boards by title on the home page.
-  - [ ] The search bar should include:
+  - [x] The search bar should include:
     - [x] Text input field
-    - [ ] Submit/Search Button
+    - [x] Submit/Search Button
     - [x] Clear Mechanism
-  - [ ] Boards with a title containing the search query in the text input field are displayed in a grid view when the user:
-    - [ ] Presses the Enter key
-    - [ ] Clicks the Submit/Search button
+  - [x] Boards with a title containing the search query in the text input field are displayed in a grid view when the user:
+    - [x] Presses the Enter key
+    - [x] Clicks the Submit/Search button
   - [x] User can delete all text from the text input field.
   - [x] When all text is cleared from the text input field, all boards are displayed in a grid view
 - [x] **View Board**
@@ -141,15 +141,15 @@ Deployed Application (**required**): [Kudos Board Deployed Site](https://kudos-b
 
 - Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+N/A
 
 - If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
 
-Add your response here
+My code is sloppy - definitely need to refactor.
 
 - Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+My timing didn't go as planned :(.
 
 ### Open-source libraries used
 
