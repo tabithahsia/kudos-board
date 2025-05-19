@@ -133,9 +133,23 @@ Deployed Application (**required**): [Kudos Board Deployed Site](https://kudos-b
 
 ### Walkthrough Video
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/45eaffaf11cf4bd79b5a2eb899de13f9?sid=b37cbe54-be36-4c22-8b9c-fb01da6f3b24" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div>
+    <a href="https://www.loom.com/share/45eaffaf11cf4bd79b5a2eb899de13f9">
+      <p>Project 3 Kudos Board Overview - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/45eaffaf11cf4bd79b5a2eb899de13f9">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/45eaffaf11cf4bd79b5a2eb899de13f9-090e10b6fa2c8309-full-play.gif">
+    </a>
+  </div>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/382d5a0f40ba48cb886e2bffce6c8f56?sid=bc5a2d4b-6f1e-46a8-bbe1-17c1369ded41" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div>
+    <a href="https://www.loom.com/share/382d5a0f40ba48cb886e2bffce6c8f56">
+      <p>Kudos Board - 19 May 2025 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/382d5a0f40ba48cb886e2bffce6c8f56">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/382d5a0f40ba48cb886e2bffce6c8f56-7233ab6e6efd6c15-full-play.gif">
+    </a>
+  </div>
 ### Reflection
 
 - Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
