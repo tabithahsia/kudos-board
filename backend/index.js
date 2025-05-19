@@ -48,7 +48,7 @@ app.get("/api/boards", async (req, res) => {
         data: {
           title: "Welcome to Kudos Board!",
           description: "Start creating your own kudos boards!",
-          category: "celebration",
+          category: "Celebration",
           image:
             "https://thumb.ac-illust.com/e2/e2cbae08aee6ed3c5fa742b33e936831_t.jpeg",
           author: "System",
