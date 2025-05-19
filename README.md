@@ -133,6 +133,8 @@ Deployed Application (**required**): [Kudos Board Deployed Site](https://kudos-b
 
 ### Walkthrough Video
 
+There are 2 videos because I didn't have enough recording time for the first video.
+
 <div>
     <a href="https://www.loom.com/share/45eaffaf11cf4bd79b5a2eb899de13f9">
       <p>Project 3 Kudos Board Overview - Watch Video</p>
