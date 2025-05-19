@@ -72,6 +72,7 @@ function CreateCardModal({ onClose, onAddCard }) {
           placeholder="Search GIFs..."
           value={gifSearch}
           onChange={(e) => setGifSearch(e.target.value)}
+          required
         />
         <button type="button" onClick={handleGifSearch}>
           Search
